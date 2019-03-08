@@ -1,0 +1,35 @@
+.AppContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.App {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.Life {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(100, 1%);
+  grid-template-rows: repeat(100, 1%);
+  border: 1px solid black;
+}
+
+.Cell {
+  border: .5px solid black;
+}
+
+.Alive {
+  background-color: green;
+}
+
+.Dead {
+  background-color: white;
+}
