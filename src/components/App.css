@@ -17,8 +17,8 @@
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(10, 10%);
-  grid-template-rows: repeat(10, 10%);
+  grid-template-columns: repeat(50, 2%);
+  grid-template-rows: repeat(20, 5%);
   border: 1px solid black;
 }
 
