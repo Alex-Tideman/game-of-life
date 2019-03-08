@@ -1,4 +1,4 @@
-A React Hook's Starter Kit to clone
+Conways Game of Life
 
 ## Available Scripts
 
@@ -26,7 +26,4 @@ The website is ready to be deployed!
 
 ## Hooks
 
-* useWindowSize
-* useDebounce
-* useArray
-* useBrowserLocation
+* useInterval
