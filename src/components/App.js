@@ -16,7 +16,7 @@ for (let i = 1; i <= 1000; i++) {
 function App() {
   const [cells, setCells] = useState(initialCells)
   const [count, setCount] = useState(0)
-  const delay = 1000
+  const delay = 50
 
   useInterval(() => {
     if (count > 0) {
@@ -55,12 +55,12 @@ function Cell({ i, alive }) {
 function isAlive(cells, cell, i) {
   const leftCell = cells[i - 1] ? cells[i - 1].props.alive : 0
   const rightCell = cells[i + 1] ? cells[i + 1].props.alive : 0
-  const aboveCell = cells[i - 10] ? cells[i - 10].props.alive : 0
-  const belowCell = cells[i + 10] ? cells[i + 10].props.alive : 0
-  const leftAboveCell = cells[i - 11] ? cells[i - 11].props.alive : 0
-  const rightAboveCell = cells[i - 9] ? cells[i - 9].props.alive : 0
-  const leftBelowCell = cells[i + 9] ? cells[i + 9].props.alive : 0
-  const rightBelowCell = cells[i + 11] ? cells[i + 11].props.alive : 0
+  const aboveCell = cells[i - 50] ? cells[i - 10].props.alive : 0
+  const belowCell = cells[i + 50] ? cells[i + 10].props.alive : 0
+  const leftAboveCell = cells[i - 51] ? cells[i - 11].props.alive : 0
+  const rightAboveCell = cells[i - 49] ? cells[i - 9].props.alive : 0
+  const leftBelowCell = cells[i + 49] ? cells[i + 9].props.alive : 0
+  const rightBelowCell = cells[i + 51] ? cells[i + 11].props.alive : 0
 
   const aliveNeighbors = leftCell + rightCell + aboveCell + belowCell + leftAboveCell + rightAboveCell + leftBelowCell + rightBelowCell
 
